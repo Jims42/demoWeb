@@ -1,15 +1,28 @@
-fieldset{background-color: #bbb;
-border-radius: 12px;
-margin: 10px;
-border: 1px dotted black;
-width: 50%;
-margin-left: auto;
-margin-right: auto;
+fieldset {
+    background-color: #05020046;
+    border-radius: 12px;
+    margin: 10px;
+    border: 1px dotted black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 0, 0, 0.671);
 }
-label{
+
+label {
     display: inline-block;
     width: 150px;
 }
-.formul{margin: 0px 0px 12px 0px;}
 
-h1, h2{text-align: center ;}
+.formul {
+    margin: 0px 0px 12px 0px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(139, 134, 134);
+    color: rgb(255, 255, 255)}
