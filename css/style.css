@@ -1,28 +1,82 @@
 fieldset {
-    background-color: #05020046;
-    border-radius: 12px;
+    background-color: #EBD099;
+    border-radius: 15px;
     margin: 10px;
-    border: 1px dotted black;
-    width: 50%;
+    border: 5px solid #A7013B;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 1) ;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    color: rgba(255, 0, 0, 0.671);
+    padding-top: 20px; /* Espace pour ne pas coller à la légende */
+    position: relative; /* Important pour placer la légende */
+
 }
 
 label {
     display: inline-block;
+    font-weight: bold;
+    margin-left: 200px;
     width: 150px;
 }
 
 .formul {
     margin: 0px 0px 12px 0px;
+    color: #FF7600;
 }
 
 h1,
 h2 {
     text-align: center;
+    font-weight: bold;
+    color: black;
 }
 
 body {
-    background-color: rgb(139, 134, 134);
-    color: rgb(255, 255, 255)}
+    background: content-box radial-gradient(#EBD099,#FF7600);
+    background-color: #EBD099;
+    color: rgb(255, 255, 255)
+}
+
+legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 1. On retire le style par défaut */
+    padding: 0;
+    font-weight: bold;
+     border-image-slice: 0;
+     border-image-repeat: stretch ;
+    
+
+    /* 2. On définit la taille de la zone de l'image */
+    width: 110px;
+    /* À ajuster selon ton image */
+    height: 45px;
+    /* À ajuster selon ton image */
+
+    /* 3. L'image en arrière-plan */
+    background-image: url('https://natra.com/wp-content/uploads/ico-contact-headquarters.svg');
+    background-repeat: no-repeat;
+
+    /* 4. On récupère la partie précise de l'image (le cadre) */
+    /* background-position: x y; (ex: -10px -50px) */
+    background-position: center;
+    background-size: cover;
+    /* Ou 'contain' selon le fichier */
+
+    /* 5. Centrage du texte dans le cadre image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Optionnel : ajuster la position par rapport au fieldset */
+    margin-left: 0px;
+    border-radius: 10px;
+    margin-right: auto;
+    font-weight: bold;
+    color: white;
+}
+input{
+    border-radius: 10px;
+}
+
