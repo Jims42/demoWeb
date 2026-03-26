@@ -4,7 +4,7 @@ fieldset {
     margin: 10px;
     border: 5px solid #A7013B;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 1) ;
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px; /* Espace pour ne pas coller à la légende */
@@ -12,17 +12,22 @@ fieldset {
 
 
 }
-input{
+input[type='text'],input[type='date'],input[type='email'],input[type='tel']{
    background: content-box radial-gradient(#EBD099,#FF7600);
     /* background-color: #FF7600; */
     color: white;
      border-radius: 10px;
      height: 25px;
-     width: auto;
+     width:250px;
 
 }
-input#conditions {margin-left: 00px;
-
+input[type='submit']{
+    background: content-box radial-gradient(#FF7600,#EBD099);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #A7013B;
+    width:80px;
+    height: 25px;
 }
 
 
