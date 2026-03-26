@@ -59,9 +59,10 @@ h2 {
 }
 
 body {
+   
     background: content-box radial-gradient(#EBD099,#FF7600);
-    background-color: #EBD099;
-    color: rgb(255, 255, 255)
+    
+    /* background-repeat: no-repeat; */
 }
 
 legend {
