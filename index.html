@@ -7,6 +7,7 @@
     <title>Mon premier formulaire</title>
     <meta name="description" content="apprentissage pedagogie formulaire html">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/test.css">
 
 </head>
 
@@ -16,26 +17,37 @@
     <form action="index.html" method="GET" enctype="application/x-www-form-urlencoded">
         <fieldset>
             <legend>état civil</legend>
-            <div class="formul"><label for="lastname">nom</label><input type="text" name="lastname" id="lastname"></div>
-            <div class="formul"><label for="firstname">prénom</label><input type="text" name="firstname" id="firstname">
+            <div class="formul"><label for="lastname">Nom</label><input type="text" name="lastname" id="lastname"></div>
+            <div class="formul"><label for="firstname">Prénom</label><input type="text" name="firstname" id="firstname">
             </div>
-            <div class="formul"><label for="birthday">date de naissance</label><input type="date" name="birthday"
+            <div class="formul"><label for="birthday">Date De Naissance</label><input type="date" name="birthday"
                     id="birthday"></div>
         </fieldset>
         <fieldset>
             <legend>information de contact</legend>
-            <div class="formul"><label for="courrier">email</label><input type="email" name="courrier" id="courrier">
+            <div class="formul"><label for="courrier">Email</label><input type="email" name="courrier" id="courrier">
             </div>
-            <div class="formul"><label for="telephone">téléphone</label><input type="tel" name="telephone"
+            <div class="formul"><label for="telephone">Téléphone</label><input type="tel" name="telephone"
                     id="telephone"></div>
         </fieldset>
-        <fieldset>
-            <div>
-                <input type="checkbox" id="conditions" name="conditions" required>
-                <label for="conditions" style="width: auto;">
+        <fieldset id="validation">
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="checkboxInput" name="checkboxInput" required>
+
+                <label for="checkboxInput" class="toggleSwitch"></label>
+
+                <span class="label-text">
                     J'accepte les <a href="./condition_util.html" target="_blank">conditions d'utilisation</a>
-                </label>
+                </span>
             </div>
+
+
+            <!-- <label for="conditions" style="width: auto;">
+                    <input type="checkbox" id="conditions" name="conditions" required>
+                    J'accepte les <a href="./condition_util.html" target="_blank">conditions d'utilisation</a>
+                </label> -->
+            <!-- </div> -->
 
             <div>
                 <input type="submit" value="S’inscrire">

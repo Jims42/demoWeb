@@ -4,19 +4,40 @@ fieldset {
     margin: 10px;
     border: 5px solid #A7013B;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 1) ;
-    width: 70%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px; /* Espace pour ne pas coller à la légende */
     position: relative; /* Important pour placer la légende */
 
+
 }
+input{
+   background: content-box radial-gradient(#EBD099,#FF7600);
+    /* background-color: #FF7600; */
+    color: white;
+     border-radius: 10px;
+     height: 25px;
+     width: auto;
+
+}
+input#conditions {margin-left: 00px;
+
+}
+
 
 label {
     display: inline-block;
     font-weight: bold;
-    margin-left: 200px;
-    width: 150px;
+    margin-left: 375px;
+    width: 175px;
+     color: #A7013B;
+     font-weight: bold;
+     font-size: 20px;
+
+}
+ .id validation {
+ margin-left: 150px ;
 }
 
 .formul {
@@ -29,6 +50,7 @@ h2 {
     text-align: center;
     font-weight: bold;
     color: black;
+    font-size: xx-large;
 }
 
 body {
@@ -44,14 +66,15 @@ legend {
     /* 1. On retire le style par défaut */
     padding: 0;
     font-weight: bold;
+    font-size: x-large;
      border-image-slice: 0;
      border-image-repeat: stretch ;
     
 
     /* 2. On définit la taille de la zone de l'image */
-    width: 110px;
+    width: 150px;
     /* À ajuster selon ton image */
-    height: 45px;
+    height: 75px;
     /* À ajuster selon ton image */
 
     /* 3. L'image en arrière-plan */
@@ -76,7 +99,3 @@ legend {
     font-weight: bold;
     color: white;
 }
-input{
-    border-radius: 10px;
-}
-
